@@ -1,0 +1,48 @@
+$primary-color: #b89e9e;
+$secondary-color: #C5B3D0;
+$primary-background: #F1F39D;
+
+body {
+    margin: 0;
+    background-color: $primary-background;
+
+}
+
+header {
+    background-color: $primary-color;
+    padding: 20px;
+    text-align: center;
+
+    .logo-name {
+        margin-bottom: 36px;
+
+        img {
+            width: 200px;
+        }
+
+        .name {
+            font-size: 32px;
+            margin-top: 8px;
+        }
+
+        .asdhypiozzi-text {
+            color: #5f0a0a;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+    }
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+
+        a {
+            text-decoration: none;
+            color: #5f1f87;
+        }
+    }
+}
