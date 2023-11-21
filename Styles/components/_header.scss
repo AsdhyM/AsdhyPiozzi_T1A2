@@ -1,0 +1,61 @@
+@import "../defaults/colors";
+@import "../defaults/brakpoints";
+@import "./utils";
+
+header {
+    @include background-styles();
+
+    .logo-name {
+        @media screen and (max-width: $medium) {
+            margin-bottom: 16px;
+        }
+        
+        img {
+            width: 100px;
+        }
+
+        .name {
+            font-size: 32px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        .asdhypiozzi-text {
+            color: #5f0a0a;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+    }
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+
+        a {
+            text-decoration: none;
+            color: #5f1f87;
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 30%;
+        }
+    }
+}
