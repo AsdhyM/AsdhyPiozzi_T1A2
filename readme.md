@@ -33,3 +33,30 @@ Code for the header:
 </header>
 ```
 
+### Footer
+Footer is at the end of the page and contains links for social media and contact information.
+The code it's as follows:
+```html
+<footer>
+    <div class="social-media">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.github.com" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+    <div class="info">
+        <b><p>Contact: 0404111222</p></b>
+        <b><a href="mailto: Email">asdhypiozzi@fakeemail.com</a></b>
+    </div>
+</footer>
+```
+
+

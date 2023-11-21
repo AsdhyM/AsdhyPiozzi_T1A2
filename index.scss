@@ -6,23 +6,28 @@ body {
     margin: 0;
     background-color: $primary-background;
 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
     background-color: $primary-color;
-    padding: 20px;
+    padding: 16px;
     text-align: center;
 
     .logo-name {
-        margin-bottom: 36px;
+        margin-bottom: 16px;
 
         img {
-            width: 200px;
+            width: 100px;
         }
 
         .name {
             font-size: 32px;
             margin-top: 8px;
+            margin-bottom: 16px;
         }
 
         .asdhypiozzi-text {
@@ -46,3 +51,37 @@ header {
         }
     }
 }
+
+footer {
+    background-color: $primary-color;
+    padding: 16px;
+    text-align: center;
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 24px;
+
+        a {
+            i {
+                color: #5f0a0a;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .info {
+        color:#5f1f87;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Shadows Into Light', cursive;
+        
+        a:link {
+            text-decoration: none;
+            color:#5f1f87; 
+        }
+    }
+}
+
+
+
