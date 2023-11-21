@@ -2,6 +2,12 @@ $primary-color: #b89e9e;
 $secondary-color: #C5B3D0;
 $primary-background: #F1F39D;
 
+@mixin background-styles() {
+    background-color: $primary-color;
+    padding: 16px;
+    text-align: center;
+}
+
 body {
     margin: 0;
     background-color: $primary-background;
@@ -13,13 +19,13 @@ body {
 }
 
 header {
-    background-color: $primary-color;
-    padding: 16px;
-    text-align: center;
+    @include background-styles();
 
     .logo-name {
-        margin-bottom: 16px;
-
+        @media screen and (max-width: 600px) {
+            margin-bottom: 16px;
+        }
+        
         img {
             width: 100px;
         }
@@ -52,10 +58,26 @@ header {
     }
 }
 
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-name {
+            .name {
+                margin-bottom: 0;
+            }
+        }
+
+        #nav-items {
+            width: 30%;
+        }
+    }
+}
+
 footer {
-    background-color: $primary-color;
-    padding: 16px;
-    text-align: center;
+    @include background-styles();
 
     .social-media {
         display: flex;
@@ -83,5 +105,16 @@ footer {
     }
 }
 
+@media screen and (min-width: 600px) {
+    footer {
+        .social-media {
+            width: 30%;
+            margin-left: auto;
+        }
 
+        .info {
+            text-align: left;
+        }
+    }
+}
 
