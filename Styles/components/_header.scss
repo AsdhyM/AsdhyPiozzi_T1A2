@@ -1,5 +1,5 @@
 @import "../defaults/colors";
-@import "../defaults/brakpoints";
+@import "../defaults/breakpoints";
 @import "./utils";
 
 header {
@@ -49,6 +49,7 @@ header {
         justify-content: space-between;
 
         .logo-name {
+            
             .name {
                 margin-bottom: 0;
             }

@@ -1,0 +1,54 @@
+@import "../../index";
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+@import "./utils";
+
+main {
+    @include background-styles();
+
+    #nav-main-info {
+        @media screen and (max-width: $medium) {
+            margin-bottom: 16px;
+        }
+
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+
+        ul li {
+            margin: 16px;
+            padding: 20px;
+
+            .about-me {
+            
+                img {
+                    height: 200px;
+                    width: 50%;
+                }
+            }
+
+            .education {
+
+                img {
+                    height: 100px;
+                    display: flex;
+                    justify: flex-end;
+                }
+            }
+
+            .experience {
+
+                img {
+                    height: 100px;
+                }
+            }
+
+            .my-blogs {
+
+                img {
+                    height: 100px;
+                }
+            }
+        }   
+    }      
+}
