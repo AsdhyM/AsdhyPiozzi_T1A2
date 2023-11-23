@@ -4,28 +4,21 @@
 @import "./utils";
 
 main {
-    @include background-styles();
-
     #nav-main-info {
-        @media screen and (max-width: $medium) {
-            margin-bottom: 16px;
-        }
-
-        display: flex;
-        justify-content: space-around;
-        height: 200px;
-
         ul li {
-            margin: 16px;
-            padding: 20px;
-
-            .about-me {
-            
-                img {
-                    height: 200px;
-                    width: 50%;
+                .about-me {
+                    img {
+                        height: 200px;
+                        width: 200px;
+                    }
                 }
             }
+        }
+    }
+
+   
+
+  
 
             .education {
 
